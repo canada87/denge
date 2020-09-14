@@ -506,10 +506,10 @@ class preprocess_data:
 
         # for i, col in enumerate(data.columns):
         #     self.tsplot(data[col], col)
-            # ds().nuova_fig(i)
-            # data[col].plot(label = col)
-            # ds().legenda()
-            # st.pyplot()
+        #     ds().nuova_fig(i)
+        #     data[col].plot(label = col)
+        #     ds().legenda()
+        #     st.pyplot()
 
         # data['range_temperatura'] = ((data['station_diur_temp_rng_c'] + data['reanalysis_tdtr_k'])/2).ewm(span = 4).mean()
         delta = data['reanalysis_air_temp_k'].mean() - data['station_avg_temp_c'].mean()
